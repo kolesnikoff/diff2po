@@ -1,0 +1,26 @@
++ Drupal.t('string 1') + some code 1
+- some string 1
+some string 2
+- <? print t("string 2"); ?>
++ <? print t("string 3"); ?>
+++some string 3
+- Drupal.t("string 4") + some code 2
++ Drupal.t("string 5") + some code 3
+some string 3
+- <? print t('string 6'); ?>
++ <? print t("string 7'); ?>
++ some string 4
++ Drupal.set('string 8') + xxx
+- some string 5
++ Drupal.t('string 9') +  Drupal.t('string 10') + some code 4
++ Drupal.t('string 11') +  Drupal.func('string 12') + some code 5
++ <?=t("string 13")?>
++ Drupal.t("string 14") + Drupal.t("string 15")
++ Drupal.t("string\" 16") + Drupal.t("string' 17")
++ <?=t("Title")?>
++ <?php print t("String 18 @title", array('@title' = > t('String 19')))?>
++ <?php print t("String 20 !title",
++   array('!title' = > t('String 21')));?>
++ <?=t("String 22")+"String 23"?>
++ <?=format_plural(2, "String 24", "String 25");?>
++ Drupal.formatPlural(1,"string 26","string 27",)
